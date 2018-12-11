@@ -1,0 +1,18 @@
+/*
+Create web page use image is header and it should have background color in body and image which should be repeat in x axis.(use property not use shorthand)
+Position should be fixed for image if scroll this should be fix in its position.(use property not use shorthand) 
+
+body
+{
+    background-color: aqua;
+    background-image: url(image1.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}*/
+
+/*Create 1 and 2 using shorthand property just comment 1 and 2 properties*/
+body{
+    background: aqua url(image1.jpg) repeat-x fixed;
+}
+
+
