@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css part3</title>
+        <style type="text/css">
+        #para1
+        {
+            font-style: italic;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;   
+        }
+
+        #para2
+        {
+
+            font-family: 'Charmonman', cursive;
+        }        
+
+        #ul
+        {
+            list-style-type: disc;
+        }
+
+        ol li
+        {
+            list-style-type:lower-alpha;                        
+        }
+        
+        ol li ol li
+        {
+            list-style-type:lower-roman;                     
+        }
+
+        table th,table tr td
+        {
+            border:2px solid pink;
+            background-color: blueviolet;
+            border-collapse:separate;
+        }
+
+        #div1
+        {
+            background-color: chartreuse;
+            height: 100px;
+            width: 100px;
+            display: inline;
+            margin: 20px;
+            padding:20px;
+        }
+
+        #span1
+        {
+
+            display:block;
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+        }
+
+        .divclass
+        {
+            background-color:blue;
+            display: inline;
+        }
+
+        #divdisplaynone
+        {
+
+            background-color:blueviolet;
+            display:none;
+        }
+
+        #divrelative
+        {
+
+            background-color: chartreuse;
+            height: 100px;
+            width:100px;
+            position: relative;
+            left:50px;
+            top:50px;
+        }
+
+         #divabsolute
+        {
+
+            background-color:darkgreen;
+            height: 100px;
+            width:100px;
+            position:absolute;
+            left:50px;
+            top:50px;
+        }
+
+        #divheader
+        {
+            background-color: firebrick;
+            left: 10px;
+            top:10px;
+            position:fixed;
+            width:100%;
+        }
+
+        #divoverflow
+        {
+            width:200px;
+            height: 100px;
+            background-color: lightcoral;
+            overflow:auto;
+            /*overflow:hidden;
+            overflow:visible;*/
+        }
+
+        #divfloat1
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blue;    
+            float: left;  
+            margin:10px;      
+        }
+
+         #divfloat2
+        {
+            width: 100px;
+            height: 100px;
+            background-color:blueviolet;       
+            float: left;    
+            margin:10px;
+        }
+
+         #divfloat3
+        {
+            width: 100px;
+            height: 100px;
+            background-color:coral;    
+            float: left;  
+            margin:10px;      
+        }
+
+        #headclear
+        {
+            clear:left;            
+        }
+
+        #divfl
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blue;    
+            float: left;
+        }
+
+         #divfr
+        {
+            width: 100px;
+            height: 100px;
+            background-color:blueviolet;   
+            float:right;    
+            }
+
+         #spansl
+        {
+            width: 100px;
+            height: 100px;
+            background-color:coral;               
+            clear: both;    
+            position: relative;   
+            left:-100px;
+            top: 100px;           
+            }
+            
+           /* descendant selector (space)
+            #Divselect p
+            {
+                color:fuchsia;                  
+            }
+            */
+            /*child selector (>)
+            #Divselect > p
+            {
+                color:fuchsia;                  
+            }
+            */
+            /*adjacent sibling selector (+)
+            #Divselect  p+p
+            {
+                color:fuchsia;                  
+            }
+            */
+        /*general sibling selector (~)*/
+            #Divselect ~ div
+            {
+                color: cyan;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+
+
+    </head>
+    <body>
+        
+        <p id="para1">
+            Benjamin Tillman (1847–1918) was the Democratic Governor of South Carolina from 1890 to 1894 and a United States Senator from 1895 until his death in 1918. A white supremacist who opposed civil rights for blacks, Tillman led a paramilitary group of Red Shirts during South Carolina's violent 1876 election. One of his legacies was South Carolina's 1895 constitution, which disenfranchised most of the black majority and ensured white rule for more than half a century. On the floor of the U.S. Senate, he frequently ridiculed blacks, and boasted of having helped to kill them during the 1876 campaign. He was known as "Pitchfork Ben" after he threatened to use a pitchfork to prod that "bag of beef", President Grover Cleveland.
+        </p>
+        <h1>Google font style</h1>
+        <p id="para2">
+            Benjamin Tillman (1847–1918) was the Democratic Governor of South Carolina from 1890 to 1894 and a United States Senator from 1895 until his death in 1918. A white supremacist who opposed civil rights for blacks, Tillman led a paramilitary group of Red Shirts during South Carolina's violent 1876 election. One of his legacies was South Carolina's 1895 constitution, which disenfranchised most of the black majority and ensured white rule for more than half a century. On the floor of the U.S. Senate, he frequently ridiculed blacks, and boasted of having helped to kill them during the 1876 campaign. He was known as "Pitchfork Ben" after he threatened to use a pitchfork to prod that "bag of beef", President Grover Cleveland.
+        </p>
+
+        <h1>un ordered list</h1>
+
+        <ul id="ul1">
+            <li>Pune</li>
+            <li>Muambia</li>
+            <li>Sangli</li>
+        </ul>
+
+        <h1>Create css nested ordered list and apply list style type alpha to parent and roman to child list.</h1>
+        <ol>
+            <li>
+               aa
+                <ol>
+                    <li>aa1</li>
+                    <li>aa2</li>
+                    <li>aa3</li>
+                </ol>
+            </li>
+            <li>bb</li>
+            <li>cc</li>
+            <li>dd</li>
+            <li>ee</li>
+        </ol>
+
+        <h1>Create table and apply border and background color to table.</h1>
+        <table>
+            <caption>Student table</caption>
+            <th>Sr.No.</th>
+            <th>Name</th>
+            <th>Id</th>
+            <tr>
+                <td>1</td>
+                <td>Nitesh</td>
+                <td>111</td>
+            </tr>
+
+            <tr>
+                    <td>2</td>
+                    <td>Amol</td>
+                    <td>222</td>
+                </tr>
+        </table>
+
+        <h1>Create DIV and show as inline give margin, padding, height and width  check if margin padding height and width is applied  is apply or not. Give your answers. 
+            
+        Answer :- Padding is applicable for inline element. Margin left and right also applicable.
+        width,height,margin-top, margin-bottom not applicable for inline element        </h1>
+
+            <div id="div1">
+                This is div1
+            </div>
+
+            <h1>  Create Span element and display as block element apply height and width. Check if apply or not 
+                <br/>
+                answer :- height and width is applicable for block level elements
+            </h1>
+
+            <span id="span1">this is span</span>
+
+            <h1>Create 5 Div show them side by side using display property.
+            </h1>
+
+            <div class="divclass">Div1</div>
+            <div class="divclass">Div2</div>
+            <div class="divclass">Div3</div>
+            <div class="divclass">Div4</div>
+            <div class="divclass">Div5</div>
+
+            <h1>Create div and set display property to NONE. and check if this is visible or not.
+                answer :- display none will not be visible
+            </h1>
+
+            <div id="divdisplaynone">div display none</div>
+            <h1> Create div and this should be 50px top and 50px left from normal position.(use relative position )</h1>
+            <div id="divrelative">div relative</div>
+
+            <h1> Create div and this should be 50PX top 50px left from normal position (use position absolute)
+            </h1>
+            <div id="divabsolute">div absolute</div>
+
+            <h1>Create header and this should be fixed position even you scroll div. </h1>
+            <div id="divheader">This is header</div>
+
+            <h1>Create DIV apply overflow values to DIV.</h1>
+
+            <div id="divoverflow">hfg gy gurg fuygwuy guguagfuggyegawya gefguy uygyuyu gyuuygyuyug wuyrgyuw gyuryuuy  yugyufgyugyu weyug yu gyuguy gwuyag fuywgw w wuuyweguwguwgu</div>
+
+            <h1>Create div side by side and use float property.
+            </h1>
+            <div id="divfloat1">div float1</div>
+            <div id="divfloat2">div float2</div>
+            <div id="divfloat3">div float3</div>
+
+            <h1 id="headclear">Create DIV element apply float left , create 2nd DIV apply float right. Now create span element and this span should be in separate line.
+            </h1>
+            <div id="divfl">div float left</div>
+            <div id="divfr">div float right</div>
+            <span id="spansl">span seperate line</span>
+
+            <h1>CSS selectors</h1>
+            <br/>
+            <div id="Divselect">
+                div1
+                <p>
+                    Para 1 + 2
+                    <p>Para1</p>
+                    <p>para2</p>
+                </p>
+
+                <p> Para3</p>
+            </div>
+
+            <div>div2</div>
+    </body>
+</html>
