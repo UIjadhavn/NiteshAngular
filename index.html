@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This dom program</title>
+        <link href=".\style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-class">
+               Search element <input type="text" class="container-search">
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item"><span class="student">Nitesh</span><button>Remove</button></li>
+                <li class="list-group-item"><span class="student">Jyoti</span><button>Remove</button></li>
+                <li class="list-group-item"><span class="student">Akshay</span><button>Remove</button></li>
+                <li class="list-group-item"><span class="student">Sachin</span><button>Remove</button></li>
+            </ul>
+            <form class="form-inline" >                
+                <div class="form-group">
+                <input type="text" id="addstudent">
+                </div>
+                <div class="form-group">
+                <input type="button" id="addbtn" value="Add Student" onclick="addItem()">
+                </div>
+            </form>
+        </div>
+
+        <script src=".\script.js" type="text/javascript"></script>
+    </body>
+</html>
